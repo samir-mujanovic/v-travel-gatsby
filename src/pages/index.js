@@ -1,21 +1,34 @@
 import React from "react"
-import { Link } from "gatsby"
+import AniLink from "gatsby-plugin-transition-link/AniLink";
+import Layout from '../components/Layout'
+import Hero from '../components/Hero'
+import Banner from '../components/Banner'
+import About from '../components/Home/About'
+import Services from '../components/Home/Services'
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import { graphql } from 'gatsby'
 
-const IndexPage = () => (
+export default ({ data }) => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <Hero home="true" img={data.defaultBg.childImageSharp.fluid}>
+      <Banner title="Enjoy Vacation With" logo=" V-Travel" info="Travel to the any corner of the world, without going around in circles.">
+        <AniLink fade to="/tours" className="btn btn-yellow">Explore tours</AniLink>
+      </Banner>
+      <div className="mouse"></div>
+    </Hero>
+    <About></About>
+    <Services />
   </Layout>
 )
 
-export default IndexPage
+export const query = graphql`
+query{
+  defaultBg: file(relativePath: {eq: "background-hero.jpeg"}) {
+    childImageSharp{
+      fluid(quality:90, maxWidth: 4160){
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+  }
+}
+`

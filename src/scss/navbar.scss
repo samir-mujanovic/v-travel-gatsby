@@ -1,0 +1,58 @@
+nav {
+  transition: all 0.2s ease-out;
+  .navbar-brand {
+    color: var(--primary) !important;
+    font-weight: 700;
+    font-size: 30px !important;
+    span {
+      color: #fff;
+      font-weight: 400;
+      font-family: "Caveat", cursive;
+    }
+  }
+
+  .navbar-toggler {
+    &:focus {
+      outline: none;
+    }
+    .menu-custom,
+    .menu-custom:before,
+    .menu-custom:after {
+      content: "";
+      display: block;
+      background: #fff;
+      height: 3px;
+      width: 30px;
+      transition: all ease-in-out 200ms;
+    }
+
+    .menu-custom:before {
+      transform: translateY(-8px);
+    }
+
+    .menu-custom:after {
+      transform: translateY(5px);
+    }
+  }
+
+  .navbar-collapse {
+    display: block !important;
+    max-height: 0;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    transition: all 0.2s ease-out;
+
+    .nav-link {
+      color: #fff;
+    }
+  }
+
+  .show {
+    max-height: 500px;
+    padding: 10px 30px;
+  }
+}
+.dark-nav {
+  background-color: #1e1e1e;
+}

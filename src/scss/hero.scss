@@ -1,0 +1,81 @@
+.banner {
+  color: #fff;
+  text-align: center;
+  h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+    span {
+      color: var(--primary);
+    }
+  }
+  p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .btn-yellow:hover {
+    color: #fff;
+  }
+}
+
+.mouse {
+  position: absolute;
+  border: 1px solid #fff;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  height: 33px;
+  width: 20px;
+  margin: 0 0 0 -10px;
+  display: block;
+  bottom: 70px;
+  left: 50%;
+  z-index: 2;
+  &:before {
+    content: "";
+    display: block;
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: #fff;
+    width: 2px;
+    height: 6px;
+    top: 5px;
+    margin: 0 auto;
+    -webkit-animation-name: drop;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-name: drop;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+  }
+}
+@keyframes drop {
+  0% {
+    top: 2px;
+    opacity: 0;
+  }
+
+  30% {
+    top: 8px;
+    opacity: 1;
+  }
+
+  100% {
+    top: 15px;
+    opacity: 0;
+  }
+}

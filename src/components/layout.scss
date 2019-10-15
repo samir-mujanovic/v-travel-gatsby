@@ -1,0 +1,44 @@
+:root {
+  --primary: #ff9f1c !important;
+  --dark: #333;
+}
+
+/* Includes */
+@import "../scss/mixins";
+@import "../scss/bootstrap/bootstrap.scss";
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Caveat:400,700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Reusable style */
+
+.btn-yellow,
+.btn-yellow-sm {
+  display: inline-block;
+  color: #fff;
+  padding: 15px 35px;
+  text-transform: capitalize;
+  font-size: 18px;
+  border: 1px solid;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  border: 1px solid var(--primary);
+  background: var(--primary);
+  &:hover {
+    background-color: transparent;
+    color: var(--dark);
+  }
+}
+
+.btn-yellow-sm {
+  padding: 13px 30px;
+  font-size: 14px;
+}
+
+.spacing {
+  padding: 80px 0;
+}
