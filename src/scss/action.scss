@@ -1,0 +1,41 @@
+.call-to-action {
+  height: 400px;
+  background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7));
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1 !important;
+  position: relative;
+
+  .action-title {
+    text-align: center;
+    .play-button {
+      height: 100px;
+      width: 100px;
+      border: 1px solid #fff;
+      background: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      margin: 0 auto;
+      &:hover {
+        background-color: #ff9f1c;
+        border: 1px solid #ff9f1c;
+        svg {
+          color: #fff;
+        }
+      }
+      svg {
+        color: #ff9f1c;
+        padding-left: 6px;
+      }
+    }
+    h2 {
+      margin-top: 20px;
+      color: #fff;
+      font-size: 40px;
+    }
+  }
+}

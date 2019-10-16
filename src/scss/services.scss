@@ -1,0 +1,27 @@
+.services-box {
+  padding: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: #f9f9f9;
+  margin-bottom: 30px;
+  svg {
+    font-size: 40px;
+    color: var(--primary);
+  }
+  h4 {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    font-weight: 500;
+    transition: 0.3s;
+    color: #000;
+  }
+  p {
+    margin-bottom: 0;
+    color: #333;
+    line-height: 28px;
+    font-weight: 300;
+    font-size: 14px;
+  }
+}

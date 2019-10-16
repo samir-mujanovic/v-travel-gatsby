@@ -23,11 +23,6 @@ export default class Navbar extends Component {
                 path: '/blog',
                 text: 'blog'
             },
-            {
-                id: 4,
-                path: '/contact',
-                text: 'contact'
-            },
         ]
     }
 
