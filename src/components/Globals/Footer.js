@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-12 col-md-4">
                             <div className="contact-block">
-                                <div class="icon-wrapp">
+                                <div className="icon-wrapp">
                                     <FaMap />
                                 </div>
                                 <div className="info">
@@ -24,7 +24,7 @@ const Footer = () => {
                         </div>
                         <div className="col-12 col-md-4">
                             <div className="contact-block">
-                                <div class="icon-wrapp">
+                                <div className="icon-wrapp">
                                     <FaPhone />
                                 </div>
                                 <div className="info">
@@ -35,7 +35,7 @@ const Footer = () => {
                         </div>
                         <div className="col-12 col-md-4">
                             <div className="contact-block">
-                                <div class="icon-wrapp">
+                                <div className="icon-wrapp">
                                     <FaEnvelope />
                                 </div>
                                 <div className="info">
@@ -48,18 +48,18 @@ const Footer = () => {
                     <div className="row mt-5">
                         <div className="col-12">
                             <form>
-                                <div class="row">
+                                <div className="row">
                                     <div className="form-group col-md-4">
-                                        <input type="text" name="name" class="form-control" id="first-name" placeholder="Name" required="required"></input>
+                                        <input type="text" name="name" className="form-control" id="first-name" placeholder="Name" required="required"></input>
                                     </div>
                                     <div className="form-group col-md-4">
-                                        <input type="email" name="email" class="form-control" id="email" placeholder="Email" required="required"></input>
+                                        <input type="email" name="email" className="form-control" id="email" placeholder="Email" required="required"></input>
                                     </div>
                                     <div className="form-group col-md-4">
-                                        <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required="required"></input>
+                                        <input type="text" name="subject" className="form-control" id="subject" placeholder="Subject" required="required"></input>
                                     </div>
                                     <div className="form-group col-md-12">
-                                        <textarea rows="6" name="message" class="form-control" id="description" placeholder="Your Message" required="required"></textarea>
+                                        <textarea rows="6" name="message" className="form-control" id="description" placeholder="Your Message" required="required"></textarea>
                                     </div>
                                 </div>
                                 <button className="btn btn-yellow-sm">Send Message</button>

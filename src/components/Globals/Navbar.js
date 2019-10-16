@@ -54,7 +54,7 @@ export default class Navbar extends Component {
                                 this.state.links.map((link) => {
                                     return (
                                         <li key={link.id} className="nav-item">
-                                            <AniLink to={link.path} className="nav-link text-capitalize">
+                                            <AniLink fade to={link.path} className="nav-link text-capitalize">
                                                 {link.text}
                                             </AniLink>
                                         </li>
