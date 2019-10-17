@@ -7,10 +7,17 @@ exports.createPages = async ({ graphql, actions }) => {
     query{
         tours:allContentfulTour{
             edges{
-                node{
+                node {
                     slug
                 }
             }
+        },
+        posts: allContentfulPost {
+            edges {
+                    node {
+                        slug
+                    }
+                }
         }
     }
     `)
@@ -19,6 +26,16 @@ exports.createPages = async ({ graphql, actions }) => {
         createPage({
             path: `tours/${node.slug}`,
             component: path.resolve('./src/templates/tour-template.js'),
+            context: {
+                slug: node.slug,
+            }
+        })
+    })
+
+    data.posts.edges.forEach(({ node }) => {
+        createPage({
+            path: `blog/${node.slug}`,
+            component: path.resolve('./src/templates/blog-template.js'),
             context: {
                 slug: node.slug,
             }

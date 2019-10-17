@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'gatsby-image'
 import { FaGlobeAmericas } from 'react-icons/fa'
-import AnilLink from 'gatsby-plugin-transition-link/AniLink'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import '../../scss/tour.scss'
 
@@ -15,7 +15,7 @@ const Tour = ({ tour }) => {
             <div className="single-items mt-5">
                 <div className="img-container">
                     <Image fluid={mainImage} alt="single tour" />
-                    <AnilLink fade to={`/tours/${slug}`} className="item-link">Details</AnilLink>
+                    <AniLink fade to={`/tours/${slug}`} className="item-link">Details</AniLink>
                 </div>
                 <div className="items-info">
                     <h2>{name}</h2>
