@@ -23,7 +23,7 @@ const About = () => {
     return (
         <section className="about spacing">
             <div className="container">
-                <Title title="Who We Are?" />
+                <Title title="Who We Are?" className="spacing-heading" />
                 <div className="row">
                     <div className="col-12 col-md-6">
                         <div className="img-container">

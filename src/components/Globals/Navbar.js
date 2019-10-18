@@ -49,7 +49,7 @@ export default class Navbar extends Component {
                         <span className="menu-custom"></span>
                     </button>
                     <div className={this.state.style}>
-                        <div className="navbar-nav">
+                        <ul className="navbar-nav ml-md-auto">
                             {
                                 this.state.links.map((link) => {
                                     return (
@@ -61,7 +61,7 @@ export default class Navbar extends Component {
                                     )
                                 })
                             }
-                        </div>
+                        </ul>
                     </div>
                 </div>
             </nav>

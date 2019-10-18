@@ -4,6 +4,8 @@ nav {
     color: var(--primary) !important;
     font-weight: 700;
     font-size: 30px !important;
+    padding: 0;
+    margin-right: 0;
     span {
       color: #fff;
       font-weight: 400;
@@ -45,6 +47,10 @@ nav {
 
     .nav-link {
       color: #fff;
+      transition: all 0.2s ease-out;
+      &:hover {
+        color: var(--primary);
+      }
     }
   }
 
@@ -55,4 +61,13 @@ nav {
 }
 .dark-nav {
   background-color: #1e1e1e;
+}
+
+@media (min-width: 768px) {
+  nav {
+    .navbar-collapse {
+      max-height: 200px;
+      background-color: transparent;
+    }
+  }
 }

@@ -2,7 +2,7 @@
   color: #fff;
   text-align: center;
   h1 {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
     text-transform: capitalize;
     padding: 0 15px;
@@ -79,5 +79,29 @@
   100% {
     top: 15px;
     opacity: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner {
+    h1 {
+      font-size: 45px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .banner {
+    h1 {
+      font-size: 55px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .banner {
+    h1 {
+      font-size: 60px;
+    }
   }
 }

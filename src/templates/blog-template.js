@@ -13,7 +13,7 @@ const Blog = ({ data }) => {
                 return (
                     <div className="rich">
                         <h3>This is awesome image</h3>
-                        <img className="img-fluid" src={node.data.target.fields.file['en-US'].url} />
+                        <img className="img-fluid" src={node.data.target.fields.file['en-US'].url} alt="blog-img" />
                         <p>Images provided by <strong>John Doe</strong></p>
                     </div>
                 )
@@ -26,7 +26,7 @@ const Blog = ({ data }) => {
             <div className="container">
                 <div className="container">
                     <div className="col-12">
-                        <h1>{title}</h1>
+                        <h1 className="text-capitalize description-heading">{title}</h1>
                         <h4>Published at : {published}</h4>
                         <div className="posts">
                             {documentToReactComponents(json, options)}

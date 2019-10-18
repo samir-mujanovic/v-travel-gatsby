@@ -1,0 +1,26 @@
+.desc-info-block {
+  h4 {
+    font-size: 18px;
+    font-weight: 500;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #000;
+  }
+  .toggler {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+  }
+  .btn {
+    svg {
+      color: var(--primary);
+    }
+  }
+  .info-p {
+    margin-bottom: 20px;
+    color: #333;
+    line-height: 28px;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}

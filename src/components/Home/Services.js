@@ -13,7 +13,7 @@ const Services = () => {
                     {
                         services.map((item, index) => {
                             return (
-                                <div className="col-12 col-md-4" key={index}>
+                                <div className="col-12 col-md-4 mt-5" key={index}>
                                     <div className="services-box">
                                         <div>{item.icon}</div>
                                         <h4>{item.title}</h4>

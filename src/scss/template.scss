@@ -1,0 +1,52 @@
+.template {
+  .details-info {
+    h4 {
+      font-size: 18px;
+      font-weight: 500;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      color: #000;
+    }
+    .price-place {
+      border-bottom: 1px solid #eee;
+      margin-bottom: 20px;
+      p {
+        span {
+          color: var(--primary);
+          font-weight: 600;
+        }
+        svg {
+          color: var(--primary);
+        }
+      }
+    }
+  }
+  .desc-p {
+    margin-bottom: 0;
+    color: #333;
+    line-height: 28px;
+    font-weight: 300;
+    font-size: 14px;
+  }
+}
+
+.description-heading {
+  margin-bottom: 18px;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin-top: 0;
+  color: var(--dark);
+  border-bottom: 1px dotted #c7c7c7;
+  position: relative;
+  margin: 40px 0;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 40%;
+    height: 2px;
+    background-color: var(--primary);
+  }
+}

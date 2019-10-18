@@ -1,3 +1,5 @@
+@import "node_modules/react-modal-video/scss/modal-video.scss";
+
 .call-to-action {
   height: 300px;
   background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7));
@@ -36,6 +38,53 @@
       margin-top: 20px;
       color: #fff;
       font-size: 30px;
+    }
+  }
+}
+
+.modal-wrapp {
+  .show {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-right: 16px;
+  }
+
+  .close {
+    position: absolute;
+    right: 0;
+    top: -5%;
+    width: 32px;
+    height: 32px;
+  }
+  .close:hover {
+    opacity: 1;
+  }
+  .close:before,
+  .close:after {
+    position: absolute;
+    left: 15px;
+    content: " ";
+    height: 25px;
+    width: 2px;
+    background-color: #fff;
+  }
+  .close:before {
+    transform: rotate(45deg);
+  }
+  .close:after {
+    transform: rotate(-45deg);
+  }
+
+  .modal-content {
+    background-color: transparent;
+    border: none;
+    .modal-header {
+      border: none;
+    }
+    .modal-body {
+      iframe {
+        border: none !important;
+      }
     }
   }
 }

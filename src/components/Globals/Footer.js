@@ -9,7 +9,7 @@ const Footer = () => {
         <>
             <section className="contacts-info spacing">
                 <div className="container">
-                    <Title title="Questions?" />
+                    <Title title="Questions?" className="spacing-heading" />
                     <div className="row">
                         <div className="col-12 col-md-4">
                             <div className="contact-block">

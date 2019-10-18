@@ -37,22 +37,22 @@ const Template = ({ data }) => {
                     <div className="row mt-5">
                         <div className="col-12 col-md-6">
                             <div className="details-info">
-                                <h3>Details</h3>
-                                <div className="d-flex justify-content-between">
-                                    <p>Starting From {price}</p>
-                                    <p><FaGlobeAmericas /> {country}</p>
+                                <h3 className="description-heading">Details</h3>
+                                <div className="d-flex justify-content-between price-place">
+                                    <p>Starting from <span>${price}</span></p>
+                                    <p className="text-capitalize"><FaGlobeAmericas /> {country}</p>
                                 </div>
                                 <h4>
                                     Starts on {start}
                                 </h4>
-                                <h4>Duration: {days}</h4>
-                                <p>{description}</p>
+                                <h4>Duration: {days} days</h4>
+                                <p className="desc-p">{description}</p>
                             </div>
                             <AniLink fade to="/tours" className="btn btn-yellow-sm mt-3">Back To Tours</AniLink>
                         </div>
-                        <div className="col-12 col-md-6">
+                        <div className="col-12 col-md-6 mt-5 mt-md-0">
                             <div className="schedule">
-                                <h2>Daily Schedule</h2>
+                                <h2 className="description-heading">Daily Schedule</h2>
                                 <div className="journey">
                                     {journey.map((item, index) => {
                                         return (

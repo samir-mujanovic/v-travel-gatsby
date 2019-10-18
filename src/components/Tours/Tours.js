@@ -15,7 +15,7 @@ query{
         days
         images{
           fluid{
-            ...GatsbyContentfulFluid_tracedSVG
+            ...GatsbyContentfulFluid
           }
         }
       }
@@ -25,11 +25,11 @@ query{
 `
 
 const Tours = () => {
-    const { tours } = useStaticQuery(getTours)
+  const { tours } = useStaticQuery(getTours)
 
-    return (
-        <TourList tours={tours} />
-    )
+  return (
+    <TourList tours={tours} />
+  )
 }
 
 export default Tours

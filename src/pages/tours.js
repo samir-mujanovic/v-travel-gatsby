@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import Layout from '../components/Layout'
-import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Hero from '../components/Hero'
 import Banner from '../components/Banner'
 import Tours from '../components/Tours/Tours'

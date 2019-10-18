@@ -12,7 +12,7 @@ const Title = ({ title, className }) => {
 export default styled(Title)`
 text-align: center;
 h2{
-    font-size: 30px;
+    font-size: 40px;
     text-transform: capitalize;
     font-weight: 700;
     margin-top: 0;
