@@ -49,9 +49,15 @@ nav {
     .nav-link {
       color: #fff;
       transition: all 0.2s ease-out;
+      font-weight: 600;
+      letter-spacing: 1px;
       &:hover {
         color: var(--primary);
       }
+    }
+
+    .link-active {
+      color: var(--primary);
     }
   }
 
